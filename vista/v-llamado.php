@@ -49,7 +49,7 @@ foreach($ar as $a){
 <form action="c-llamado.php" method="POST">
 <input type="text" id="texto-entrada"  onChange="enviar()" name="palabra" placeholder="Por favor ingrese su texto.">
 
-<div id="contenedor-salida" style="border: solid 1px; padding: 10px;">
+<div id="contenedor-salida" >
     
     <?php echo $r; ?>
 </div>
