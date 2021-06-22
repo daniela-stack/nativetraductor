@@ -13,8 +13,8 @@
     </div>
     <div class="span3">
         <h2>Qué traduce?</h2>
-        <p>Toda palabra o frase que desea aprender o conocer en la lengua Tucano  . </p>
-        <p><a class="btn" href="#">View details &raquo;</a></p>
+        <p>Toda palabra o frase que desea aprender o conocer en la lengua Tucano. En el siguiente boton encontrará la lista de palabras que existen. </p>
+        <p><a class="btn" href="otro-ejemplo.php">lista palabras &raquo;</a></p>
     </div>
     <div class="span3">
         <h2>Como funciona?</h2>
