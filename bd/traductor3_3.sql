@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-06-2021 a las 15:49:12
--- Versión del servidor: 10.4.14-MariaDB
--- Versión de PHP: 7.4.10
+-- Tiempo de generación: 22-06-2021 a las 19:48:20
+-- Versión del servidor: 10.4.18-MariaDB
+-- Versión de PHP: 7.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -114,9 +114,9 @@ INSERT INTO `tb_palabras` (`id_palabra`, `palabra`) VALUES
 (8, 'dic[~ú]r[~a]'),
 (9, 'wa\'agú'),
 (10, 'petápu'),
-(11, '-A-mi'),
+(11, 'ní-á-su'),
 (12, '-A-mo'),
-(13, 'Yu\'ú'),
+(13, 'Yu\'ú ( tiempo presente)'),
 (14, '¡Né!'),
 (15, 'Bucú'),
 (16, 'Pacú'),
@@ -133,9 +133,9 @@ INSERT INTO `tb_palabras` (`id_palabra`, `palabra`) VALUES
 (29, 'Cuántos'),
 (30, 'voy'),
 (31, 'hacia'),
-(32, 'EL'),
+(32, 'yo estuve ahí'),
 (33, 'Ella'),
-(34, 'Yo'),
+(34, 'Yo (tiempo presente)'),
 (35, '¡Hola!'),
 (36, 'Viejo'),
 (37, 'Papá'),
@@ -148,8 +148,64 @@ INSERT INTO `tb_palabras` (`id_palabra`, `palabra`) VALUES
 (44, 'HOLA'),
 (45, 'NE[~e]'),
 (46, 'NEE'),
-(818, 'yo voy'),
-(819, 'Yu\'ú wa\\\'agú');
+(47, 'yo voy'),
+(48, 'Yu\'ú wa\\\'agú'),
+(49, 'Ní-\\\'i'),
+(50, 'yo estoy'),
+(51, 'Ní'),
+(52, 'estar (singular)'),
+(53, 'usted está (singular)'),
+(54, 'Ní-mi'),
+(55, 'él está'),
+(56, 'Ní-mo'),
+(57, 'ella está'),
+(58, 'está '),
+(59, 'nosotros estamos'),
+(60, 'ustedes están'),
+(61, 'están'),
+(62, 'a-pu (tiempo pasado)'),
+(63, 'yo '),
+(64, 'usted '),
+(65, 'una cosa'),
+(66, 'nosotros '),
+(67, 'ustedes'),
+(68, 'unas cosas'),
+(69, 'a-mi (tiempo pasado)'),
+(70, 'él'),
+(71, 'nosotros estuvimos'),
+(72, 'una cosa estuvo'),
+(73, 'ní-w[~i]'),
+(74, 'él estuvo'),
+(75, 'ní-w[~o]'),
+(76, 'ella estuvo'),
+(77, 'ní-w[~a]'),
+(78, 'ellos estuvieron'),
+(79, 'ellas estuvieron'),
+(80, 'ní-ti (interrogativa presente)'),
+(81, '¿estoy yo?\r\n'),
+(82, '¿está usted?\r\n'),
+(83, '¿está cosa?\r\n'),
+(84, '¿estamos nosotros?\r\n'),
+(85, '¿están ustedes?\r\n'),
+(86, '¿está él?\r\n'),
+(87, '¿está ella?\r\n'),
+(88, '¿están ellos?\r\n'),
+(89, '¿están ellas?\r\n'),
+(90, '¿están unas cosas?'),
+(91, '[á~]gara'),
+(92, 'ángel'),
+(93, '[~ú]ba\'a'),
+(94, 'no se'),
+(95, '¿verdad?'),
+(96, '¿nir[~ó]ta?'),
+(97, 'huevos'),
+(98, 'dierí'),
+(99, 'flores'),
+(100, 'o\'óri'),
+(101, 'casa'),
+(102, 'wi\'í'),
+(103, 'gente'),
+(104, 'màsá');
 
 --
 -- Disparadores `tb_palabras`
@@ -221,8 +277,65 @@ INSERT INTO `tb_palabras_idiomas` (`id`, `id_palabra`, `id_idioma`) VALUES
 (43, 38, 2),
 (44, 18, 1),
 (45, 39, 2),
-(48, 818, 2),
-(49, 819, 1);
+(48, 47, 2),
+(49, 48, 1),
+(50, 49, 1),
+(51, 50, 2),
+(52, 51, 1),
+(53, 52, 2),
+(54, 53, 2),
+(55, 54, 1),
+(56, 55, 2),
+(57, 56, 1),
+(58, 55, 2),
+(59, 57, 2),
+(60, 59, 2),
+(61, 60, 2),
+(62, 61, 2),
+(63, 58, 2),
+(64, 62, 1),
+(65, 63, 2),
+(66, 64, 2),
+(67, 65, 2),
+(68, 66, 2),
+(69, 67, 2),
+(70, 68, 2),
+(71, 69, 1),
+(72, 70, 2),
+(73, 71, 2),
+(74, 72, 2),
+(75, 73, 1),
+(76, 74, 2),
+(77, 75, 1),
+(78, 76, 2),
+(79, 77, 1),
+(80, 78, 2),
+(81, 79, 2),
+(82, 80, 1),
+(83, 81, 2),
+(84, 82, 2),
+(85, 83, 2),
+(86, 84, 2),
+(87, 85, 2),
+(88, 86, 2),
+(89, 87, 2),
+(90, 88, 2),
+(91, 89, 2),
+(92, 90, 2),
+(93, 91, 1),
+(94, 93, 1),
+(95, 92, 2),
+(96, 94, 2),
+(97, 95, 2),
+(98, 96, 1),
+(99, 97, 2),
+(100, 98, 1),
+(101, 99, 2),
+(102, 100, 1),
+(103, 101, 2),
+(104, 102, 1),
+(105, 103, 2),
+(106, 104, 1);
 
 -- --------------------------------------------------------
 
@@ -282,8 +395,70 @@ INSERT INTO `tb_traduccion` (`id`, `palabra_1`, `palabra_2`, `id_palabra`) VALUE
 (38, 19, '2', 2),
 (39, 20, '23', 23),
 (40, 20, '1', 1),
-(41, 21, '818', 818),
-(42, 21, '819', 819);
+(41, 21, '47', 47),
+(42, 21, '48', 48),
+(43, 22, '49', 49),
+(44, 22, '50', 50),
+(45, 23, '51', 51),
+(46, 23, '52', 52),
+(47, 7, '43', 43),
+(48, 7, '43', 43),
+(51, 24, '56', 56),
+(52, 24, '57', 57),
+(53, 25, '54', 54),
+(54, 25, '55', 55),
+(55, 26, '49', 49),
+(56, 26, '53', 53),
+(57, 22, '59', 59),
+(58, 22, '60', 60),
+(59, 22, '61', 61),
+(60, 22, '58', 58),
+(61, 27, '62', 62),
+(62, 27, '63', 63),
+(63, 27, '64', 64),
+(64, 27, '65', 65),
+(65, 27, '66', 66),
+(66, 27, '67', 67),
+(67, 27, '68', 68),
+(68, 28, '69', 69),
+(69, 28, '70', 70),
+(70, 29, '14', 14),
+(71, 29, '35', 35),
+(75, 30, '71', 71),
+(76, 30, '72', 72),
+(77, 30, '6', 6),
+(78, 31, '73', 73),
+(79, 31, '74', 74),
+(80, 32, '75', 75),
+(81, 32, '76', 76),
+(82, 33, '77', 77),
+(83, 33, '78', 78),
+(84, 33, '79', 79),
+(85, 34, '80', 80),
+(86, 34, '81', 81),
+(87, 34, '82', 82),
+(88, 34, '83', 83),
+(89, 34, '84', 84),
+(90, 34, '85', 85),
+(91, 34, '86', 86),
+(92, 34, '87', 87),
+(93, 34, '88', 88),
+(94, 34, '89', 89),
+(95, 34, '90', 90),
+(96, 35, '91', 91),
+(97, 35, '92', 92),
+(98, 36, '93', 93),
+(99, 36, '94', 94),
+(100, 37, '95', 95),
+(101, 37, '96', 96),
+(102, 38, '97', 97),
+(103, 38, '98', 98),
+(104, 39, '99', 99),
+(105, 39, '100', 100),
+(106, 40, '101', 101),
+(107, 40, '102', 102),
+(108, 41, '103', 103),
+(109, 41, '104', 104);
 
 -- --------------------------------------------------------
 
@@ -305,7 +480,7 @@ CREATE TABLE `vista_traductor` (
 --
 DROP TABLE IF EXISTS `vista_traductor`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `vista_traductor`  AS  select count(0) AS `conteo`,`t1`.`id_idioma` AS `id_idioma`,`t2`.`id_palabra` AS `id_palabra`,`t3`.`id` AS `id` from ((`tb_idiomas` `t1` join `tb_palabras` `t2`) join `tb_palabras_idiomas` `t3`) where `t1`.`id_idioma` = `t3`.`id_idioma` and `t2`.`id_palabra` = `t3`.`id_palabra` group by `t1`.`id_idioma`,`t2`.`id_palabra`,`t3`.`id` ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `vista_traductor`  AS SELECT count(0) AS `conteo`, `t1`.`id_idioma` AS `id_idioma`, `t2`.`id_palabra` AS `id_palabra`, `t3`.`id` AS `id` FROM ((`tb_idiomas` `t1` join `tb_palabras` `t2`) join `tb_palabras_idiomas` `t3`) WHERE `t1`.`id_idioma` = `t3`.`id_idioma` AND `t2`.`id_palabra` = `t3`.`id_palabra` GROUP BY `t1`.`id_idioma`, `t2`.`id_palabra`, `t3`.`id` ;
 
 --
 -- Índices para tablas volcadas
@@ -370,13 +545,13 @@ ALTER TABLE `tb_palabras`
 -- AUTO_INCREMENT de la tabla `tb_palabras_idiomas`
 --
 ALTER TABLE `tb_palabras_idiomas`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 
 --
 -- AUTO_INCREMENT de la tabla `tb_traduccion`
 --
 ALTER TABLE `tb_traduccion`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
 
 --
 -- Restricciones para tablas volcadas
