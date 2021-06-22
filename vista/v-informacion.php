@@ -7,23 +7,24 @@
 
 <div class="row">
     <div class="span3">
-        <h2>Por qué?</h2>
-         <p>El Tradurctor Native realiza traducciones de la lengua Tucano originaria de la Amazonia, hablada por la etnia Jepa majsa, a punto de desaparecer. </p>
-        <p><a class="btn" href="#">View details &raquo;</a></p>
+    
+        <h1 class="display-4">Por qué?</h1>
+         <p class="lead">El Tradurctor Native realiza traducciones de la lengua Tucano originaria de la Amazonia, hablada por la etnia Jepa majsa, a punto de desaparecer. </p>
+        
     </div>
     <div class="span3">
-        <h2>Qué traduce?</h2>
-        <p>Toda palabra o frase que desea aprender o conocer en la lengua Tucano. En el siguiente boton encontrará la lista de palabras que existen. </p>
-        <p><a class="btn" href="otro-ejemplo.php">lista palabras &raquo;</a></p>
+        <h1 class="display-4">Qué traduce?</h1>
+        <p class="lead">Toda palabra o frase que desea aprender o conocer en la lengua Tucano  . </p>
+        <!--<p><a class="btn" href="#">View details &raquo;</a></p>-->
     </div>
     <div class="span3">
-        <h2>Como funciona?</h2>
-        <p>Solo debe digitar la palabra o frase que desea traducir, elegir el idioma y como resultado mostrara la traducción, en el idioma que haya elegido, en este caso de Tucano a Español o de Español a Tucanno.</p>
-        <p><a class="btn" href="#">View details &raquo;</a></p>
+        <h1 class="display-4">Como funciona?</h1>
+        <p class="lead">Solo debe digitar la palabra o frase que desea traducir, elegir el idioma y como resultado mostrara la traducción, en el idioma que haya elegido, en este caso de Tucano a Español o de Español a Tucanno.</p>
+       
     </div>
     <div class="span3">
-         <h2>Creadoras</h2>
-         <p>Aprendices del Tecnologo ADSI, Daniela Avellaneda, Deimi Gomez, Lizbeth Caro.</p>
-        <p><a class="btn" href="#">View details &raquo;</a></p>
+         <h1 class="display-4">Creadoras</h1>
+         <p class="lead">Aprendices del Tecnologo ADSI, Daniela Avellaneda, Deimi Gomez, Lizbeth Caro.</p>
+    
     </div>
 </div>
