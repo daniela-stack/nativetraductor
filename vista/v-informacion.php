@@ -15,7 +15,7 @@
     <div class="span3">
         <h1 class="display-4">Qué traduce?</h1>
         <p class="lead">Toda palabra o frase que desea aprender o conocer en la lengua Tucano. A continuación encontraras una lista de las palbras </p>
-        <p><a class="btn" href="otro-ejemplo.php">Lista de palabras</a></p>
+        <p><a class="btn" href="otro-ejemplo.php">Lista de palbras</a></p>
     </div>
     <div class="span3">
         <h1 class="display-4">Como funciona?</h1>

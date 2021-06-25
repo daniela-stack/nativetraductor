@@ -35,7 +35,7 @@
             tu propia opinion y da un clic en la boton de Enviar y listo.</p>
             </option>
             </select>
-          <!--<p><a class="btn" href="#">View details &raquo;</a></p>-->
+          <!----<p><a class="btn" href="#">View details &raquo;</a></p>-->
         </div>
         <!------------------------------------Aqui se termina la modificacion de preguntas frecuentes----------------------------------------------------->
         
@@ -49,7 +49,7 @@
           Actualmente solo esta disponifle la funcion traducir la escritura. </p></li>
 
 
-          <!--<p><a class="btn" href="#">Ver lista de palabras &raquo;</a></p>-->
+          <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
        </div>
         <!--Esta es la secion de comentarios-->
           <div class="span3">
@@ -66,10 +66,10 @@
             
               <input type="radio" name="radio2">Escribe tu propia opinion</b></input></option>
                <!--Este es el formulario para el evio del comentario-->       
-              <form method="post" action="mailto:un_correo_cualquiera_@gmail.com" >
+              <form method="post" action="mailto:traductornative@gmail.com" >
                           <input type="text" name="Escribe tu propio comentario">
                         <br>  
-                          <input type="submit" value="Enviar"">
+                          <input type="submit" value="Enviar" />
                       </form>
         <!--Aqui termina la seccion de comentarios-->
                       

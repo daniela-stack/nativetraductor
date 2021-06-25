@@ -9,7 +9,7 @@ $ar = $db->select('SELECT idioma FROM tb_idiomas');
 
 ?>
 
-<select name="menu"><!-- lista -->
+<select name="menu" id="nuevocambio"><!-- lista -->
 
 <?php
 
@@ -22,14 +22,16 @@ foreach($ar as $a){
 
 ?>
 
-</select><!--  termina lista -->
+</select ><!--  termina lista -->
 
-<!--icono -->
-<button type="button" title="Cambiar orden de opciones" id="btn_change" style="width: auto; margin-right: 20px; margin-left: 20px;" class="btn btn-default btn-sm btn-circle">
+<!--icono
+<button type="button" title="Cambiar orden de opciones" id="btn_change" style="width: auto; margin-right: 20px; margin-left: 20px;" 
+class="btn btn-default btn-sm btn-circle" onclick="cambiar();">
 <span class="glyphicon glyphicon-transfer"></span>
 <img src="imagenes/iconos/icono_transferir.svg" style="height: 25px;" >
-</button>
-<select name="menu"><!-- lista -->
+</button> -->
+
+<select name="menu" id="nuevocambio"><!-- lista -->
 
 <?php
 foreach($ar as $a){
@@ -41,7 +43,7 @@ foreach($ar as $a){
 
 ?>
 
-</select><!--  termina lista -->
+</select ><!--  termina lista -->
 
 <br><br><br>
 
@@ -61,6 +63,24 @@ foreach($ar as $a){
     {   // this.options[this.selectedIndex].text //.value
         var envio = document.getElementById('form');
         envio.submit();
+    }
+
+
+    function cambiar()
+    {
+      var cambio = document.getElementById('nuevocambio');
+      console.log(option.value)
+
+      if (option.value === 'idioma')
+      {
+          moverDerecha();
+      }
+
+    }
+
+    function moverDerecha()
+    {
+      
     }
 
 </script>
