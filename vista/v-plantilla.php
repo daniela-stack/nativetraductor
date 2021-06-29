@@ -1,3 +1,5 @@
+<!-- esta es la plantilla bootstrap-->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

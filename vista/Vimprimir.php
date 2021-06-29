@@ -1,5 +1,8 @@
+<!--este archivo me organiza las palabras en una tabla, para ser mostrado.-->
+
 <?php
 
+    //clase para organizar en una tabla
     class Vimprimir
     {
         static function imprimir( $resultado, $des = null )

@@ -48,11 +48,11 @@ foreach($ar as $a){
 
 <!-- Formulario -->
 <form action="c-llamado.php" method="POST">
-<input type="text" id="texto-entrada" onkeyup="al_digitar();" onChange="enviar()" name="palabra" placeholder="Por favor ingrese su texto.">
+  <input type="text" id="texto-entrada" onkeyup="al_digitar();" onChange="enviar()" name="palabra" placeholder="Por favor ingrese su texto.">
 
-<div id="contenedor-salida" style="border: solid 1px; padding: 8px;">
+  <div id="contenedor-salida" style="border: solid 1px; padding: 8px;">
 
-    Aquí se mostrarán los resultados.
-    
-</div>
+      Aquí se mostrarán los resultados.
+      
+  </div>
 </form>
