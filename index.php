@@ -1,3 +1,6 @@
+<!--Autoras Deimi Gomez, Lizbeth Caro y Daniela Avellaneda.
+este es el index del traductor.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

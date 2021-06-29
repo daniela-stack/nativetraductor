@@ -9,6 +9,7 @@
 
     //echo $a.$b.$c.$d;
 
+    //consultas
     $conexion = mysqli_connect( "localhost", "root", "", "traductor3_3" );
     $sql = " INSERT INTO tb_traduccion ( id, palabra_1, palabra_2, id_palabra ) ";
     $sql .= " VALUES( NULL, '$a', '$d', '$d' ) ";
@@ -22,9 +23,6 @@
 
     $db->insert('tb_traduccion',$ar);*/
     
-
-
-
 
     //Esta línea verifica si la inserción funciono.
     if( mysqli_affected_rows( $conexion ) > 0 )

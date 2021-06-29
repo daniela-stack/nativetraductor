@@ -3,6 +3,8 @@
 include("funciones/funcion_traducir.php");
 include( "vista/Vimprimir.php" );
 
+
+//lamado de las clases
 $palabra = $_POST[ 'palabra' ];
 $r = llamado::traduce("$palabra");
 $r = Vimprimir::organizar( $r );

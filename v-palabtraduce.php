@@ -1,4 +1,6 @@
 
+<!--este archivo me permite relacionar las palabras de la BD.-->
+
 <form action="prueba.php" method="POST"><!-- Apertura del formulario -->
 
     <select name="v1"><!-- lista -->
