@@ -2,7 +2,7 @@
 
     //incluye la conección de la BD
     include("conexion.php");
-
+    //clase para la traducción de las palabras.
     class llamado extends conexion
     {
         static function traduce($palabra)

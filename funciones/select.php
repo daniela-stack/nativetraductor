@@ -1,7 +1,7 @@
 <?php
-
+//incluye la conección de la BD
 include( "conexion.php");
-
+ //clase para el select
 class select extends conexion
 {
     static function consultar_tablas ($tabla, $campo, $dato)

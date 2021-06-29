@@ -1,6 +1,8 @@
 <?php
-
+//incluye la conección de la BD
 include_once( "conexion.php");
+
+//clase para eliminar
 class delete extends conexion
 {
     static function borrar ($tabla, $campo = null, $dato = null)

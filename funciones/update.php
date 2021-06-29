@@ -1,7 +1,7 @@
 <?php
-
+//incluye la conección de la BD
 include_once("conexion.php");
-
+//clase para la actualización.
 class update extends conexion
 {
         static function actualizar ($tabla, $campo = null, $dato = null, $llave = null, $dato2 = null)

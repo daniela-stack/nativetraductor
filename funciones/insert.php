@@ -1,9 +1,9 @@
 <?php
 /**estas son las funcion */
-
+//incluye la conección de la BD
 include_once("conexion.php");
 
-
+//clase para la inserción.
 class inserts extends conexion
 {
     //Esta funcion trae los datos del sistema
