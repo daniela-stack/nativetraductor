@@ -1,0 +1,133 @@
+<!--menu con bootstrap-->
+
+<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Bienvenidos al Traductor Native</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="c-traduce.php">Traducir</a></li>
+              <li><a href="c-informacion.php">Información</a></li>
+              <li><a href="c-ayuda.php">Ayuda</a></li>
+              
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+<!--este archivo me muestra el centro de ayuda del Traductor -->
+
+<div class="hero-unit">
+        <h1>Hola, este es el centro de ayuda del traductor Native</h1>
+        <br><br>
+        <p>Queremos escuchar tu  opinión sobre el traductor, si tienes dificultades, si te facilita el uso del traductor, si hay algún problema en las traducciones realizadas</p>
+        <!--<p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>-->
+      </div>
+      <div class="row">
+        <!-----------------------Desde aqui, se empieza a modificar la columna de preguntas frecuentes para el desplieque---------------------------------->
+        <div class="span3">
+          <option><h2>¿Preguntas Frecuentes?</h2><br></option>
+
+          <select>  <!-- muestra un menu de opciones -->
+
+            <option><li><p><b>1. Tengo que comprar la aplicación móvil?</b></p></a></li></option>
+            <option><br><p>No. Descargar e instalar nuestra aplicación móvil es completamente gratuito.</p></option>
+
+              <option><li><p><b>2. Necesito iniciar sesión o registrarme para usar la aplicación o para recibir ofertas especiales?</b></p></a></li></option>
+              <option><p>Por el momento no, no almacenamos sus datos o información en ningun lugar.</p></option>
+
+              <option><li><p><b>3. mi telefono es compatible?</b></p></a></li></option>
+              <option><p>Si instalaste y abriste esta aplicación, entonces sí lo es.</p></option>
+
+              <option><li><p><b>4. Qué caracteristicas tiene la aplicación móvil?</b></p></a></li></option>
+              <option><p>Por el momento, solo traduce la escritura.</p></option>
+
+              <option><li><p><b>5. Está disponible el modo de acceso fuera de línea?</b></p></a></li></option>
+              <option><p>Si, el acceso fuera de línea está disponible para traducir la escritura. </p></option>
+
+              <li><p><b>6. Cómo se utiliza el traductor de escritura?</b></p></a></li>
+              <p>Solo tienes que ir al area de escritura y escribir tantas palabras o frases como necesites. Despues de esto sólo tendrás que hacer clic en traducir.
+              La traducción se realizara de manera instantánea y eficiente.</p>
+
+              <li><p><b>7. Como puedo dar mi opinión sobre la aplicación?</b></p></a></li>
+              <p>Siempre escuchamos a nuestros clientes, por eso creamos la sección de comentarios y opiniones, solo elige una de nuetras opciones o Escribe
+              tu propia opinión y da un clic en la botón de Enviar y listo.</p>
+              </option>
+          </select>
+          <!----<p><a class="btn" href="#">View details &raquo;</a></p>-->
+        </div>
+        <!------------------------------------Aqui se termina la modificacion de preguntas frecuentes----------------------------------------------------->
+        
+        <div class="span3">
+          <h2>Uso del traductor</h2>
+          <li><p><b>1. En un tu ordenador, busca "Traductor Native" </b></p></a></li>
+
+          <li><p><b>2. En un tu telefono o table, solo abre la aplicación "Traductor Native" </b></p></a></li>
+
+          <li><p><b>Nota: </b></a>
+          Actualmente solo esta disponible la función traducir la escritura. </p></li>
+
+
+          <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
+       </div>
+        <!--Esta es la secion de comentarios-->
+          <div class="span3">
+            <h2>Comentarios</h2>
+
+              <input type="radio" name="radio2"><b>Las traducciones son incorrectas a veces</input>
+              <br>
+              <input type="radio" name="radio2">Algunas funciones no funcionan</input>
+              <br>
+              <input type="radio" name="radio2">la aplicación es lenta</input>
+              <br>
+              <input type="radio" name="radio2">Incluyan mas idiomas</input>
+              <br>
+            
+              <input type="radio" name="radio2">Escribe tu propia opinión</b></input></option>
+               <!--Este es el formulario para el evio del comentario-->       
+              <form method="post" action="mailto:traductornative@gmail.com" >
+                          <input type="text" name="Escribe tu propio comentario">
+                        <br>  
+                          <input type="submit" value="Enviar" />
+                      </form>
+        <!--Aqui termina la seccion de comentarios-->
+                      
+          <!--<p><a class="btn" href="#">View details &raquo;</a></p>-->
+        </div>
+      </div>
+<!-- este archivo me muestra la informacion del traductor. -->
+
+<div class="hero-unit" >
+    <h1>Guia del traductor Native</h1>
+    <p>EL traductor se realizo con el fin de conservar el idioma Tucano.</p>
+    
+</div>
+
+<div class="row">
+    <div class="span3">
+    
+        <h1 class="display-4">Por qué?</h1>
+         <p class="lead">El Tradurctor Native realiza traducciones de la lengua Tucano originaria de la Amazonia, hablada por la etnia Jepa majsa, a punto de desaparecer. </p>
+        
+    </div>
+    <div class="span3">
+        <h1 class="display-4">Qué traduce?</h1>
+        <p class="lead">Toda palabra o frase que desea aprender o conocer en la lengua Tucano. A continuación encontraras una lista de las palabras </p>
+        <p><a class="btn" href="otro-ejemplo.php">Lista de palabras</a></p> <!--me muestra el contenido del traductor en PDF (una lista) -->
+    </div>
+    <div class="span3">
+        <h1 class="display-4">Como funciona?</h1>
+        <p class="lead">Solo debe digitar la palabra o frase que desea traducir, elegir el idioma y como resultado mostrara la traducción, en el idioma que haya elegido, en este caso de tucano a español o de español a tucano.</p>
+       
+    </div>
+    <div class="span3">
+         <h1 class="display-4">Creadoras</h1>
+         <p class="lead">Aprendices del Tecnologo ADSI, Deimi Gomez, Lizbeth Caro, Daniela Avellaneda.</p>
+    
+    </div>
+</div>
